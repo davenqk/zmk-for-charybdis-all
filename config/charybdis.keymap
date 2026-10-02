@@ -98,14 +98,14 @@
         layer_0 {
             bindings = <
 &kp ESC             &kp Q       &kp W       &kp E        &kp R          &kp T          &ctrl_mb1 MB1 Y  &kp U         &kp I        &kp O       &kp P          &kp BSLH
-&mt LEFT_SHIFT TAB  &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHIFT F   &kp G          &mt LS(F10) H    &mt RSHIFT J  &mt RCTRL K  &mt RALT L  &mt RGUI SEMI  &kp APOS
-&lt 5 LCTRL         &kp Z       &kp X       &kp C        &kp V          &kp B          &kp N            &kp M         &kp COMMA    &kp DOT     &kp FSLH       &kp RSHFT
+&mt LEFT_SHIFT TAB  &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHIFT F   &kp G          &mt LS(F10) H    &mt RSHIFT J  &mt RCTRL K  &mt RALT L  &mt RGUI SEMI  &mt RSHIFT SQT
+&mo 5               &kp Z       &kp X       &kp C        &kp V          &kp B          &kp N            &kp M         &kp COMMA    &kp DOT     &kp FSLH       &none
                                             &mo 3        &kp BACKSPACE  &lt 1 SPACE    &lt 2 ENTER      &kp DEL       &mo 4
             >;
 
             sensor-bindings =
                 <&scroll_vertical_encoder>,
-                // 编码器1：上下滚动,,,,,,,
+                // 编码器1：上下滚动,,,,,,,,
                 <&scroll_horizontal_encoder>;
 
             // 编码器2：左右滚动            
@@ -115,14 +115,14 @@
         layer_1 {
             bindings = <
 &kp LC(LS(ESC))  &none     &none     &none      &none      &none    &kp LBKT         &kp KP_N7        &kp KP_N8       &kp KP_N9  &kp RBKT       &kp DEL
-&kp CAPS         &none     &none     &none      &none      &none    &kp KP_PLUS      &kp KP_N4        &kp KP_N5       &kp KP_N6  &kp KP_MINUS   &kp BACKSPACE
-&kp KP_NUMLOCK   &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none    &kp KP_MULTIPLY  &kp KP_NUMBER_1  &kp KP_N2       &kp KP_N3  &kp KP_DIVIDE  &kp KP_EQUAL
+&kp TAB          &none     &none     &none      &none      &none    &kp KP_PLUS      &kp KP_N4        &kp KP_N5       &kp KP_N6  &kp KP_MINUS   &kp BACKSPACE
+&mo 6            &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none    &kp KP_MULTIPLY  &kp KP_NUMBER_1  &kp KP_N2       &kp KP_N3  &kp KP_DIVIDE  &kp KP_EQUAL
                                      &none      &none      &none    &kp KP_ENTER     &kp KP_N0        &kp KP_NUMLOCK
             >;
 
             sensor-bindings =
                 <&scroll_horizontal_encoder>,
-                // 编码器1：左右滚动    ,,,,,,,
+                // 编码器1：左右滚动    ,,,,,,,,
                 <&scroll_vertical_encoder>;
 
             // 编码器2：上下滚动
@@ -130,10 +130,10 @@
 
         layer_2 {
             bindings = <
-&kp ESC        &kp LC(W)   &kp LC(PAGE_UP)  &kp LG(UP)    &kp LC(PAGE_DOWN)  &trans    &kp PAGE_UP    &kp HOME   &kp UP     &kp END    &kp PRINTSCREEN  &kp C_VOL_UP
-&kp LS(LG(S))  &kp LA(F4)  &kp LG(LEFT)     &kp LG(DOWN)  &kp LG(RIGHT)      &none     &kp PAGE_DOWN  &kp LEFT   &kp DOWN   &kp RIGHT  &kp INS          &kp K_MUTE
-&mo 6          &kp LGUI    &kp LALT         &kp LCTRL     &kp LSHFT          &none     &trans         &kp RSHFT  &kp RCTRL  &kp RALT   &kp RGUI         &kp C_VOL_DN
-                                            &trans        &trans             &none     &trans         &trans     &trans
+&none     &kp LC(W)   &kp LC(PAGE_UP)  &kp LG(UP)    &kp LC(PAGE_DOWN)  &none            &kp PAGE_UP    &kp HOME   &kp UP     &kp END    &kp PRINTSCREEN  &kp C_VOL_UP
+&kp CLCK  &kp LA(F4)  &kp LG(LEFT)     &kp LG(DOWN)  &kp LG(RIGHT)      &none            &kp PAGE_DOWN  &kp LEFT   &kp DOWN   &kp RIGHT  &kp INS          &kp K_MUTE
+&none     &kp LGUI    &kp LALT         &kp LCTRL     &kp LSHFT          &none            &none          &kp RSHFT  &kp RCTRL  &kp RALT   &kp RGUI         &kp C_VOL_DN
+                                       &none         &none              &kp LS(LG(S))    &none          &none      &none
             >;
         };
 
@@ -157,10 +157,10 @@
 
         layer_5 {
             bindings = <
-&kp LC(ESC)  &kp LC(Q)  &kp LC(W)  &kp LC(E)  &kp LC(R)  &kp LC(T)    &kp LC(Y)    &kp LC(U)    &kp LC(I)  &kp LC(O)  &kp LC(P)  &trans
-&kp LSHFT    &kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &kp LC(G)    &kp LC(H)    &kp LC(K)    &kp LC(L)  &kp LC(L)  &trans     &trans
-&trans       &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)    &kp LC(N)    &kp LC(M)    &trans     &trans     &trans     &trans
-                                   &trans     &trans     &kp BSPC     &kp LC(RET)  &kp LC(DEL)  &trans
+&kp LC(ESC)  &kp LC(Q)  &kp LC(W)  &kp LC(E)  &kp LC(R)  &kp LC(T)       &kp LC(Y)    &kp LC(U)    &kp LC(I)  &kp LC(O)  &kp LC(P)  &none
+&kp LSHFT    &kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &kp LC(G)       &kp LC(H)    &kp LC(K)    &kp LC(L)  &kp LC(L)  &none      &none
+&none        &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)       &kp LC(N)    &kp LC(M)    &none      &none      &none      &none
+                                   &none      &none      &kp LC(BSPC)    &kp LC(RET)  &kp LC(DEL)  &none
             >;
         };
 
