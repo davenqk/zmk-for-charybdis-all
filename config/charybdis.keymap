@@ -99,13 +99,13 @@
             bindings = <
 &kp ESC             &kp Q       &kp W       &kp E        &kp R          &kp T          &ctrl_mb1 MB1 Y  &kp U         &kp I        &kp O       &kp P          &kp MINUS
 &mt LEFT_SHIFT TAB  &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHIFT F   &kp G          &mt LS(F10) H    &mt RSHIFT J  &mt RCTRL K  &mt RALT L  &mt RGUI SEMI  &mt RSHIFT SQT
-&mo 5               &kp Z       &kp X       &kp C        &kp V          &kp B          &kp N            &kp M         &kp COMMA    &kp DOT     &kp FSLH       &kp BSLH
+&mo 5               &kp Z       &lt 7 X     &kp C        &kp V          &kp B          &kp N            &kp M         &kp COMMA    &kp DOT     &kp FSLH       &kp BSLH
                                             &mo 3        &kp BACKSPACE  &lt 1 SPACE    &lt 2 ENTER      &kp DEL       &mo 4
             >;
 
             sensor-bindings =
                 <&scroll_vertical_encoder>,
-                // 编码器1：上下滚动,,,,,,,,,
+                // 编码器1：上下滚动,,,,,,,,,,
                 <&scroll_horizontal_encoder>;
 
             // 编码器2：左右滚动            
@@ -122,7 +122,7 @@
 
             sensor-bindings =
                 <&scroll_horizontal_encoder>,
-                // 编码器1：左右滚动    ,,,,,,,,,
+                // 编码器1：左右滚动    ,,,,,,,,,,
                 <&scroll_vertical_encoder>;
 
             // 编码器2：上下滚动
@@ -175,10 +175,10 @@
 
         layer_7 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans      &trans  &trans          &mmv MOVE_UP    &trans           &trans           &trans
+&trans  &trans  &trans  &trans  &trans    &trans      &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans           &trans
+&trans  &trans  &trans  &trans  &mkp MB2  &mkp MB1    &trans  &msc SCRL_LEFT  &msc SCRL_UP    &msc SCRL_DOWN   &msc SCRL_RIGHT  &trans
+                        &trans  &trans    &mkp MB3    &trans  &trans          &trans
             >;
         };
 
