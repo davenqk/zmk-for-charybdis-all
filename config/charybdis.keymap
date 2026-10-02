@@ -105,7 +105,7 @@
 
             sensor-bindings =
                 <&scroll_vertical_encoder>,
-                // 编码器1：上下滚动,,,,
+                // 编码器1：上下滚动,,,,,
                 <&scroll_horizontal_encoder>;
 
             // 编码器2：左右滚动            
@@ -122,7 +122,7 @@
 
             sensor-bindings =
                 <&scroll_horizontal_encoder>,
-                // 编码器1：左右滚动    ,,,,
+                // 编码器1：左右滚动    ,,,,,
                 <&scroll_vertical_encoder>;
 
             // 编码器2：上下滚动
@@ -130,10 +130,10 @@
 
         layer_2 {
             bindings = <
-&kp ESC        &kp LC(W)   &kp LC(PAGE_UP)  &kp LG(UP)    &kp LC(PAGE_DOWN)  &trans    &kp PAGE_UP    &kp HOME  &kp UP    &kp END    &kp PRINTSCREEN  &kp C_VOL_UP
-&kp LS(LG(S))  &kp LA(F4)  &kp LG(LEFT)     &kp LG(DOWN)  &kp LG(RIGHT)      &none     &kp PAGE_DOWN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp INS          &kp K_MUTE
-&trans         &kp LGUI    &kp LALT         &kp LCTRL     &kp LSHFT          &none     &trans         &trans    &trans    &trans     &trans           &kp C_VOL_DN
-                                            &trans        &trans             &none     &trans         &trans    &trans
+&kp ESC        &kp LC(W)   &kp LC(PAGE_UP)  &kp LG(UP)    &kp LC(PAGE_DOWN)  &trans    &kp PAGE_UP    &kp HOME   &kp UP     &kp END    &kp PRINTSCREEN  &kp C_VOL_UP
+&kp LS(LG(S))  &kp LA(F4)  &kp LG(LEFT)     &kp LG(DOWN)  &kp LG(RIGHT)      &none     &kp PAGE_DOWN  &kp LEFT   &kp DOWN   &kp RIGHT  &kp INS          &kp K_MUTE
+&trans         &kp LGUI    &kp LALT         &kp LCTRL     &kp LSHFT          &none     &trans         &kp RSHFT  &kp RCTRL  &kp RALT   &kp RGUI         &kp C_VOL_DN
+                                            &trans        &trans             &none     &trans         &trans     &trans
             >;
         };
 
