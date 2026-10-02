@@ -105,7 +105,7 @@
 
             sensor-bindings =
                 <&scroll_vertical_encoder>,
-                // 编码器1：上下滚动,,
+                // 编码器1：上下滚动,,,
                 <&scroll_horizontal_encoder>;
 
             // 编码器2：左右滚动            
@@ -122,7 +122,7 @@
 
             sensor-bindings =
                 <&scroll_horizontal_encoder>,
-                // 编码器1：左右滚动    ,,
+                // 编码器1：左右滚动    ,,,
                 <&scroll_vertical_encoder>;
 
             // 编码器2：上下滚动
@@ -157,10 +157,10 @@
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&kp LC(ESC)  &kp LC(Q)  &kp LC(W)  &kp LC(E)  &kp LC(R)  &kp LC(T)    &kp LC(Y)    &kp LC(U)    &kp LC(I)  &kp LC(O)  &kp LC(P)  &trans
+&kp LSHFT    &kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &kp LC(G)    &kp LC(H)    &kp LC(K)    &kp LC(L)  &kp LC(L)  &trans     &trans
+&trans       &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)    &kp LC(N)    &kp LC(M)    &trans     &trans     &trans     &trans
+                                   &trans     &trans     &kp BSPC     &kp LC(RET)  &kp LC(DEL)  &trans
             >;
         };
 
